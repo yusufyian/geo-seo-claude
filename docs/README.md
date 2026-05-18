@@ -13,6 +13,8 @@ If you are new here, start with **Getting Started**. If you are contributing, sk
 | [Architecture](architecture.md) | Repo layout, audit flow, parallel subagent dispatch, data storage. |
 | [Skills & Agents](skills-and-agents.md) | Reference for every sub-skill, subagent, Python script, and schema template. |
 | [Scoring Methodology](scoring-methodology.md) | How the composite GEO Score is computed, per-category signals, caveats. |
+| [Codex Usage](codex-usage.md) | How to use the Claude-oriented skill bundle from Codex without changing the existing installer. |
+| [中文使用说明](zh-usage.md) | Claude Code、Codex、本地 Python 脚本三种运行方式的中文说明。 |
 | [FAQ](faq.md) | Common questions for users and contributors. |
 | [Contributing](../CONTRIBUTING.md) | How to report bugs, propose features, and open PRs. |
 

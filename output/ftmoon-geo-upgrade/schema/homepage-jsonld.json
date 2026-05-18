@@ -1,0 +1,114 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ftmoon.com/#organization",
+      "name": "申达链",
+      "alternateName": [
+        "FTMoon",
+        "ftmoon.com"
+      ],
+      "url": "https://www.ftmoon.com/",
+      "description": "申达链 FTMoon 是面向企业级区块链应用场景的解决方案平台，帮助企业实现可信存证、数据协同、链上追溯和智能合约应用。",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://www.ftmoon.com/contact",
+        "availableLanguage": [
+          "zh-CN",
+          "en"
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ftmoon.com/#website",
+      "url": "https://www.ftmoon.com/",
+      "name": "申达链 FTMoon",
+      "publisher": {
+        "@id": "https://www.ftmoon.com/#organization"
+      },
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.ftmoon.com/#service",
+      "name": "企业级区块链应用解决方案",
+      "serviceType": "Enterprise blockchain application platform",
+      "provider": {
+        "@id": "https://www.ftmoon.com/#organization"
+      },
+      "areaServed": "China",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Enterprises and institutions"
+      },
+      "description": "申达链为企业和机构提供可信存证、数据协同、智能合约、产品追溯和多方协作等区块链应用能力。",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "申达链核心能力",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "可信存证"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "数据协同"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "智能合约"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "链上追溯"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ftmoon.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "申达链是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "申达链 FTMoon 是面向企业级区块链应用场景的解决方案平台，帮助企业实现可信存证、数据协同、链上追溯和智能合约应用。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "申达链适合哪些企业场景？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "申达链适合供应链可信协同、合同与凭证存证、产品追溯、数据确权、数字资产管理和多方业务协作等场景。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "企业使用申达链是否需要改造现有系统？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "企业可以通过接口集成、业务系统对接或定制化部署接入申达链能力，具体改造范围取决于现有系统结构、数据流程和业务场景。"
+          }
+        }
+      ]
+    }
+  ]
+}

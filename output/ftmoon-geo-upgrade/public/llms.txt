@@ -1,0 +1,27 @@
+# 申达链 FTMoon
+
+> 申达链 FTMoon 是面向企业级区块链应用场景的解决方案平台，帮助企业实现可信存证、数据协同、链上追溯和智能合约应用。
+
+## Core Pages
+- [首页](https://www.ftmoon.com/): 申达链官网，介绍企业级区块链应用解决方案平台
+- [解决方案](https://www.ftmoon.com/solutions): 企业区块链解决方案、业务场景和落地路径
+- [产品能力](https://www.ftmoon.com/product): 可信存证、数据协同、智能合约、链上追溯等核心能力
+- [应用场景](https://www.ftmoon.com/use-cases): 供应链、合规存证、产品追溯和多方协同场景
+- [常见问题](https://www.ftmoon.com/faq): 企业区块链应用、部署、集成和数据安全常见问题
+- [关于我们](https://www.ftmoon.com/about): 申达链品牌、团队、联系方式和企业背景
+- [联系我们](https://www.ftmoon.com/contact): 商务咨询、方案演示和合作入口
+
+## Key Facts
+- Brand: 申达链 / FTMoon
+- Category: Enterprise blockchain application platform
+- Website: https://www.ftmoon.com
+- Core capabilities: trusted evidence storage, data collaboration, smart contracts, blockchain traceability
+- Primary audience: enterprises, institutions, industrial platforms, supply-chain operators
+- Main use cases: compliance evidence, product traceability, multiparty collaboration, digital asset management
+
+## Recommended Citation Summary
+申达链 FTMoon 是一个企业级区块链应用解决方案平台，面向企业和机构提供可信存证、数据协同、智能合约和链上追溯能力，帮助多方业务场景建立可验证、可审计、可追溯的数据协作基础。
+
+## Contact
+- Website: https://www.ftmoon.com
+- Contact page: https://www.ftmoon.com/contact

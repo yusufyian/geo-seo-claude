@@ -1,0 +1,149 @@
+{
+  "url": "https://www.ftmoon.com",
+  "brand_name": "FTMoon / ftmoon.com",
+  "date": "2026-05-18",
+  "geo_score": 18,
+  "scores": {
+    "ai_citability": 20,
+    "brand_authority": 10,
+    "content_eeat": 5,
+    "technical": 45,
+    "schema": 0,
+    "platform_optimization": 32
+  },
+  "platforms": {
+    "Google AI Overviews": 25,
+    "ChatGPT": 20,
+    "Perplexity": 18,
+    "Gemini": 32,
+    "Bing Copilot": 28
+  },
+  "executive_summary": "This quick GEO audit found that ftmoon.com is reachable and returns HTTP 200, but the public homepage currently exposes almost no meaningful server-rendered content to crawlers. The initial HTML contains only minimal text, no headings, no structured data, no sitemap reference, no robots.txt, and no llms.txt. The most urgent issue is not crawler blocking; it is that AI crawlers have little substantive content to parse, quote, or associate with the brand.",
+  "findings": [
+    {
+      "severity": "critical",
+      "title": "Homepage content is not meaningfully server-rendered",
+      "description": "The fetched HTML indicates a client-side app root with only about three words of visible text. AI crawlers that do not execute JavaScript will not see the actual product, service, or company content."
+    },
+    {
+      "severity": "critical",
+      "title": "Citability score is effectively zero",
+      "description": "The citability scorer found zero analyzable content blocks. There are no self-contained answer passages, question-based sections, statistics, or extractable explanations for AI systems to cite."
+    },
+    {
+      "severity": "high",
+      "title": "No JSON-LD structured data detected",
+      "description": "The homepage has no Organization, WebSite, Service, SoftwareApplication, FAQ, or Breadcrumb schema. This weakens entity understanding and makes the brand harder for AI systems to classify."
+    },
+    {
+      "severity": "high",
+      "title": "robots.txt and sitemap.xml are missing",
+      "description": "robots.txt returned 404 and no sitemap was discovered. Crawlers are not explicitly blocked, but there is no crawler guidance or sitemap discovery path."
+    },
+    {
+      "severity": "high",
+      "title": "llms.txt is missing",
+      "description": "No llms.txt or llms-full.txt file was found. This is a quick GEO win because it can point AI systems to the most important pages and concise business facts."
+    },
+    {
+      "severity": "medium",
+      "title": "Basic SEO metadata is incomplete",
+      "description": "The page has a title and description, but no canonical URL, no heading structure, no internal links in the fetched HTML, and no visible navigation content for crawlers."
+    },
+    {
+      "severity": "medium",
+      "title": "Security headers are absent",
+      "description": "The response did not include HSTS, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, or Permissions-Policy."
+    }
+  ],
+  "quick_wins": [
+    {
+      "action": "Publish a robots.txt file that allows major AI crawlers and references sitemap.xml",
+      "impact": "Improves crawl guidance and removes ambiguity for AI and search bots."
+    },
+    {
+      "action": "Create /llms.txt with key pages, business facts, contact details, and solution summaries",
+      "impact": "Gives AI systems a compact map of what the site is about."
+    },
+    {
+      "action": "Add canonical URL, one H1, descriptive H2 sections, and internal links in the initial HTML",
+      "impact": "Improves basic crawler interpretation without waiting for a full redesign."
+    },
+    {
+      "action": "Add Organization and WebSite JSON-LD to the homepage",
+      "impact": "Establishes entity identity and sameAs links for AI search systems."
+    },
+    {
+      "action": "Add HSTS and X-Content-Type-Options response headers",
+      "impact": "Strengthens technical trust signals."
+    }
+  ],
+  "medium_term": [
+    {
+      "action": "Implement SSR or prerendering for the public marketing pages",
+      "impact": "Makes product and company content visible to AI crawlers that do not run JavaScript."
+    },
+    {
+      "action": "Rewrite the homepage with citable sections of 100-200 words each",
+      "impact": "Creates passages AI systems can quote for queries about the company and its blockchain solution."
+    },
+    {
+      "action": "Add Service or SoftwareApplication schema plus FAQ schema",
+      "impact": "Improves machine-readable understanding of the offering and common questions."
+    },
+    {
+      "action": "Publish sitemap.xml and submit it to Google Search Console and Bing Webmaster Tools",
+      "impact": "Improves discovery for Google AI Overviews, Gemini, Bing Copilot, and classic search."
+    },
+    {
+      "action": "Create About, Solutions, Use Cases, FAQ, and Contact pages with unique static content",
+      "impact": "Builds topical authority and gives AI systems more trustworthy source material."
+    }
+  ],
+  "strategic": [
+    {
+      "action": "Build third-party entity signals through LinkedIn, GitHub, press, partner pages, and industry directories",
+      "impact": "Supports brand recognition beyond the owned domain."
+    },
+    {
+      "action": "Publish original case studies or technical explainers about enterprise blockchain applications",
+      "impact": "Creates differentiated material that AI systems are more likely to cite."
+    },
+    {
+      "action": "Develop comparison and use-case content around enterprise blockchain platforms",
+      "impact": "Captures high-intent AI search queries and improves topical coverage."
+    }
+  ],
+  "crawler_access": {
+    "GPTBot": {
+      "platform": "ChatGPT",
+      "status": "Unknown - no robots.txt",
+      "recommendation": "Publish robots.txt and explicitly allow GPTBot."
+    },
+    "OAI-SearchBot": {
+      "platform": "ChatGPT Search",
+      "status": "Unknown - no robots.txt",
+      "recommendation": "Publish robots.txt and explicitly allow OAI-SearchBot."
+    },
+    "ClaudeBot": {
+      "platform": "Claude",
+      "status": "Unknown - no robots.txt",
+      "recommendation": "Publish robots.txt and explicitly allow ClaudeBot."
+    },
+    "PerplexityBot": {
+      "platform": "Perplexity",
+      "status": "Unknown - no robots.txt",
+      "recommendation": "Publish robots.txt and explicitly allow PerplexityBot."
+    },
+    "Google-Extended": {
+      "platform": "Gemini",
+      "status": "Unknown - no robots.txt",
+      "recommendation": "Publish robots.txt with clear Google crawler policy."
+    },
+    "Bingbot": {
+      "platform": "Bing Copilot",
+      "status": "Unknown - no robots.txt",
+      "recommendation": "Publish robots.txt and include sitemap.xml."
+    }
+  }
+}

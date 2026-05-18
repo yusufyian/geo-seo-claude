@@ -28,13 +28,20 @@
 
 ## Quick Start
 
-### One-Command Install (macOS/Linux)
+Choose the runtime that matches how you want to use the toolkit.
+
+### Option 1: Run with Claude Code
+
+Claude Code is the default runtime for this project. Install the skill bundle,
+restart Claude Code, then use the `/geo ...` commands listed below.
+
+#### One-Command Install (macOS/Linux)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/geo-seo-claude/main/install.sh | bash
 ```
 
-### Manual Install
+#### Manual Install
 
 ```bash
 git clone https://github.com/zubair-trabzada/geo-seo-claude.git
@@ -42,7 +49,7 @@ cd geo-seo-claude
 ./install.sh
 ```
 
-### Windows (Git Bash)
+#### Windows (Git Bash)
 
 Requires [Git for Windows](https://git-scm.com/downloads) which includes Git Bash.
 
@@ -57,6 +64,65 @@ cd geo-seo-claude
 ```
 
 > **Note:** Right-click the folder and select "Open Git Bash here", or open Git Bash and navigate to the directory. Do not use PowerShell or Command Prompt.
+
+After installation, open Claude Code and run:
+
+```text
+/geo quick https://example.com
+/geo audit https://example.com
+/geo citability https://example.com/blog/post
+```
+
+### Option 2: Run with Codex
+
+This project remains Claude Code-first, but its Markdown skills, Python scripts,
+schema templates, and reports can also be used from Codex. Install the Codex
+copy with:
+
+```bash
+./install-codex.sh
+```
+
+The Codex installer copies files into `~/.codex/skills/`, creates an isolated
+venv, rewrites installed Markdown references from Claude paths to Codex paths,
+and keeps the existing Claude installer unchanged.
+
+After installation, restart Codex and ask for the workflow in natural language,
+for example:
+
+```text
+Use the geo skill to run a GEO quick audit for https://example.com
+Audit https://example.com for AI crawler access, schema, and citability
+Generate a GEO report for https://example.com
+```
+
+For more detail, see [`AGENTS.md`](AGENTS.md) and
+[`docs/codex-usage.md`](docs/codex-usage.md). 中文说明见
+[`docs/zh-usage.md`](docs/zh-usage.md).
+
+### Option 3: Run Python Utilities Directly
+
+Use this mode for development, debugging, or one-off script runs:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Then run individual tools:
+
+```bash
+python scripts/fetch_page.py https://example.com page
+python scripts/citability_scorer.py https://example.com/blog/post
+python scripts/llmstxt_generator.py https://example.com
+```
+
+Run tests with:
+
+```bash
+pytest
+```
 
 ### Requirements
 
